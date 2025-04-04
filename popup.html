@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FocuBubble</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FocuBubble</h1>
+      <div class="focus-toggle">
+        <label class="switch">
+          <input type="checkbox" id="focusToggle">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Focus Mode</span>
+      </div>
+    </header>
+
+    <div class="timer-section">
+      <div class="timer" id="timer">25:00</div>
+      <div class="timer-controls">
+        <button id="startTimer" class="primary-btn">Start Session</button>
+        <button id="resetTimer" class="secondary-btn">Reset</button>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat-card">
+        <span class="stat-label">Today's Focus Time</span>
+        <span class="stat-value" id="todayMinutes">0 mins</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Current Streak</span>
+        <span class="stat-value" id="currentStreak">0 days</span>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <button id="settingsBtn" class="icon-btn">⚙️ Settings</button>
+      <button id="blockedSitesBtn" class="icon-btn">🚫 Blocked Sites</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
